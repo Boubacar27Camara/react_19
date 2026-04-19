@@ -11,7 +11,6 @@ const Card = () => {
         </div>
      );
 }
- 
 export default Card;
 
 export const CardWithoutJSX = () => {

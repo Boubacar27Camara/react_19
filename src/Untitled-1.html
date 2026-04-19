@@ -1,0 +1,24 @@
+
+
+function App({ name, age, telephone }) {
+    return (
+        <div className="controller">
+            <Profile name={name} age={age} telephone={telephone} />
+        </div>
+    )
+}
+
+export default App;
+
+function Profile({ name, age, telephone }) {
+    name = "Camara Boubacar";
+    age = 25;
+    Telephone = "77 123 45 67";
+    return (
+        <div className="profile"> 
+            <h2>{name}</h2>
+            <p>Age: {age}</p>
+            <p>Telephone: {Telephone}</p>
+        </div>
+    )
+}
