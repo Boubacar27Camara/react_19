@@ -1,0 +1,49 @@
+import './App.css';
+import CardWithoutJSX from './Card';
+import { Hello, HelloWithouJSX, } from './Hello';
+import Welcome from './Welcome';
+import AmazingComponent from './Button';
+import UserProfile from './UserProfile';
+import ContactForm from './ContactForm';
+import StyledForm from './StyledForm';
+import CandidateProfile from './CandidateProfile';
+import Product from "./Product";
+import Greeting from './Greeting';
+import CardWrapper from './CardWrapper';
+
+
+function App() {
+
+
+
+  return (
+    <div>
+      <CardWrapper title="User Profile">
+        <p>Bruce Wayne</p>
+        <p>saloumc147@gmail.com</p>
+        <button>Edit profile</button>
+      </CardWrapper>
+      <Greeting message="Bruce" name="Goog morning" />
+      <Greeting name="Clark" />
+      <Greeting message="Welcome" />
+      <Greeting />
+      <Product 
+      title="Gaming laptop" 
+      price={1299.99} inStock={true} 
+      categories={["Electronics", "Computers", "Gaming"]} />
+      <Welcome name="Bruce" alias="Batman" />
+      <Welcome name="Clark" alias="superman"/>
+      <Welcome name="Diana" alias="Wonder Woman" />
+      <CandidateProfile />
+      <StyledForm />
+      <ContactForm />
+      <UserProfile />
+      <Hello />
+      <HelloWithouJSX />
+      <CardWithoutJSX />
+      <AmazingComponent />
+    </div>
+  )
+}
+
+export default App;

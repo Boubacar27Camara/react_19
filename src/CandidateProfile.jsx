@@ -1,0 +1,20 @@
+
+export const CandidateProfile = () => {
+
+    const name = "Peter Parker";
+    const role = "Web Developer";
+    const yearsOfExperience = 5;
+    const isAvailable = true;
+
+    return ( 
+        <div>
+            <h2>{name}</h2>
+            <p>{role} with {yearsOfExperience} years of experience </p>
+            <p>Started in {2025 - yearsOfExperience}</p>
+            <p>Status: {isAvailable ? "Available for hire": "Not available"}</p>
+            <p>Contact: {name.toLocaleLowerCase().replace("", ".")}@email.com</p>
+        </div>
+     );
+}
+ 
+export default CandidateProfile;
